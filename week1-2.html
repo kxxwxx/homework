@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <!--        Bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!--        Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+
+        <!--        Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+
+        <style>
+            * {
+                font-family: 'Noto Serif KR', serif;
+            }
+
+            .wrap {
+                width: 800px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                margin: auto;
+            }
+
+            .btn-center {
+                text-align: center;
+            }
+
+            .red-font {
+                color: #c90000
+            }
+
+            .img {
+                background-image: url(https://wallpaperaccess.com/full/1367488.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 800px;
+                height: 400px;
+            }
+
+            .carousel-size {
+                width: 800px;
+                height: 400px;
+            }
+        </style>
+
+        <script>
+            function order() {
+                alert("주문해주셔서 감사합니다. 메리 크리스마스!🌲")
+            }
+        </script>
+
+        <title>MERRY TREE MARKET | 크리스마스 트리 세트 </title>
+    </head>
+    <body>
+        <div class="wrap">
+            <div>
+                <H1 class="red-font">Merry Tree Market</H1>
+                <H5>이번 크리스마스, 트리 아래에서 소중한 사람들과 시간을 보내세요.</H5>
+            </div>
+            <br>
+            <Div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-size">
+                            <img class="d-block w-100" src="https://wallpaperaccess.com/full/1367488.jpg"
+                                 alt="First slide"></div>
+                        <div class="carousel-item carousel-size">
+                            <img class="d-block w-100"
+                                 src="https://www.itl.cat/pngfile/big/88-883155_best-christmas-tree-wallpaper-christmas-tree-new-year.jpg"
+                                 alt="Second slide">
+                        </div>
+                        <div class="carousel-item carousel-size">
+                            <img class="d-block w-100"
+                                 src="https://www.teahub.io/photos/full/0-5216_christmas-tree-close-up-christmas-pc-wallpaper-4k.jpg"
+                                 alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                       data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                       data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </Div>
+
+            <div>
+                <br>
+                <p class="red-font"><b>소중한 사람들과 집에서 함께 하는 특별한 크리스마스.</b><br></p>
+                <p>이번 겨울, 집에서 크리스마스 트리를 꾸며보세요.
+                    <br>트리, 전구, 장식까지 Merry Tree Market의 풀세트 구성으로 간편하게.</p>
+                <br>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">주문자명</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">상품 옵션</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <!--                    <option selected> </option>-->
+                    <option value="1">트리 + 전구</option>
+                    <option value="2">트리 + 전구 + 레드 장식 set</option>
+                    <option value="3">트리 + 전구 + 레드/골드 장식 set</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">배송지 주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">연락처</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="btn-center">
+                <button type="submit" class="btn btn-danger" onclick="order()">지금 바로 주문하기🌲</button>
+            </div>
+        </div>
+    </body>
+</html>
